@@ -1,8 +1,6 @@
 # README
 
-テスト森田！
-テスト森田2!
-テスト森田3!
+テスト森田4!
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
