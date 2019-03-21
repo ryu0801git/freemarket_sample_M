@@ -1,8 +1,8 @@
-  .header_top {
+  .header-top {
     height: 128px;
     background-color: $body;
     position: relative;
-    h1 {
+    &__h1 {
         height: 49px;
         width: 193px;
         display: block;
