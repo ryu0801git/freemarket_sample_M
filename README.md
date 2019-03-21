@@ -11,10 +11,10 @@
 |introduction|text||
 |bithday|date|null: false|
 |evaluation|string||
-|card_id|refference|foreign_key: true|
-|payment_id|refference|foreign_key: true|
-|point_id|refference|foreign_key: true|
-|sales_mony_id|refference|foreign_key: true|
+|card_id|reference|foreign_key: true|
+|payment_id|reference|foreign_key: true|
+|point_id|reference|foreign_key: true|
+|sales_mony_id|reference|foreign_key: true|
 
 ### Association
 - has_many :items, dependent: :destroy
@@ -33,7 +33,7 @@
 |first_name|string|null: false|
 |family_name_kana|string|null: false|
 |first_name_kana|string|null: false|
-|user_id|refference|foreign_key: true|
+|user_id|reference|foreign_key: true|
 
 ### Association
 - belongs_to user
@@ -49,7 +49,7 @@
 |block|string|null: false|
 |building_number|string||
 |phone_number|integer|null: false|
-|user_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to user
@@ -61,16 +61,16 @@
 |product_name|text|null: false|
 |price|integer|null: false|
 |product_description|text|null: false|
-|category_id|refference|null: false,foreign_key: true|
-|size_id|refference|null: false,foreign_key: true|
+|category_id|reference|null: false,foreign_key: true|
+|size_id|reference|null: false,foreign_key: true|
 |product_state|string|null: false|
 |trade_state|string|null: false|
 |listing_date|string|null: false|
-|brand_id|refference|null: false,foreign_key: true|
-|delivery_id|refference|null: false,foreign_key: true|
-|image_id|refference|null: false,foreign_key: true|
-|comment_id|refference|null: false,foreign_key: true|
-|user_id|refference|null: false,foreign_key: true|
+|brand_id|reference|null: false,foreign_key: true|
+|delivery_id|reference|null: false,foreign_key: true|
+|image_id|reference|null: false,foreign_key: true|
+|comment_id|reference|null: false,foreign_key: true|
+|user_id|reference|null: false,foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -85,8 +85,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |category_name|string|null: false|
-|parent_id|refference|foreign_key: parent_id|
-|item_id|refference|null: false, foreign_key: true|
+|parent_id|reference|foreign_key: parent_id|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - has_many :items
@@ -98,7 +98,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|item_id|refference|null: false, foreign_key: true|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - has_many :items
@@ -108,7 +108,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |brand|string||
-|item_id|refference|null: false, foreign_key: true|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :item
@@ -118,7 +118,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |image|string|null: false|
-|item_id|refference|null: false, foreign_key: true|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :item
@@ -131,7 +131,7 @@
 |regional_delivery|string|null: false|
 |delivery_method|string|null: false|
 |delivery_days|integer|null: false|
-|item_id|refference|null: false, foreign_key: true|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :item
@@ -141,8 +141,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |comment|text|null: false|
-|user_id|refference|null: false, foreign_key: true|
-|item_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
+|item_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -156,7 +156,7 @@
 |valid_month|integer|null: false|
 |vaild_year|integer|null: false|
 |security_code|integer|null: false|
-|user_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -166,7 +166,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |point|integer|null: false|
-|user_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -176,7 +176,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |sales_money|integer|null: false|
-|user_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -186,7 +186,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |payment|string|null: false|
-|user_id|refference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
