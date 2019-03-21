@@ -60,9 +60,7 @@
 |product_name|text|null: false|
 |price|integer|null: false|
 |product_description|text|null: false,foreign_key: true|
-|large_category_id|integer|null: false,foreign_key: true|
-|medium_category_id|integer|null: false,foreign_key: true|
-|small_category_id|integer|null: false,foreign_key: true|
+|category_id|integer|null: false,foreign_key: true|
 |size_id|integer|null: false,foreign_key: true|
 |product_state|string|null: false|
 |trade_state|string|null: false|
@@ -75,48 +73,24 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :large_category
-- belongs_to :medium_category
-- belongs_to :size
+- belonds_to :category
 - belongs_to :brand
 - has_many :images
 - has_many :commensts, dependent: :destroy
 - has_one :deliveries, dependent: :destroy
 
 
-## large_categoriesテーブル
+##categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|category_name|string|null: false|
+|parent_id|integer|foreign_key: parent_id|
+|item_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :items
-- has_many :medium_categories, dependent: :destory
-
-
-## medium_categoriesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|large_category_id|string|null: false, foreign_key: true|
-
-### Association
-- has_many :items
-- has_many :small_categories, dependent: :destroy
-- belongs_to :large_category
-
-
-## small_categoriesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|large_category_id|string|null: false, foreign_key: true|
-|medium_category_id|string|null: false, foreign_key: true|
-
-### Association
-- has_many :items
-- belongs_to :large_category
-- belongs_to :medium_category
+- belongs_to :parent, class_name: :Category
+- has_many :children, class_name: :Category
 
 
 ## sizesテーブル
