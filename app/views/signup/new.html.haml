@@ -1,23 +1,23 @@
 .wrapper
   = render partial: "header_top"
 
-  %main.main-wrapper
-    .main-content
-      %h2.main-content__h2 新規会員登録
+  %main.main_wrapper
+    .main_content
+      %h2.main_head 新規会員登録
 
-      .main-inner
-        .main-inner-content
-          = link_to "https://www.mercari.com/jp/signup/registration/", class: "main-inner-content__a_btn-default main-inner-content__a_btn-mail" do
+      .main_inner
+        .main_inner_content
+          %a.btn-default.btn-mail{href: "https://www.mercari.com/jp/signup/registration/"}
             %p.icon-mail メールアドレスで登録
 
-          %button#facebook-login.main-inner-content__a_btn-default.btn-sns.main-inner-content__button_sns-facebook
+          %button#facebook-login.btn-default.btn-sns.btn-sns-facebook
             %p.icon-facebook Facebookで登録
 
-          %button#google-login.main-inner-content__a_btn-default.btn-sns.main-inner-content__button_sns-google
+          %button#google-login.btn-default.btn-sns.btn-sns-google
             %p.icon-fgoogle Googleで登録
 
-          %span.far.fa-envelope{class: "main-inner-content__icon_mail"}
-          %span.fab.fa-facebook{class: "main-inner-content__icon_facebook-log"}
-          %img.main-inner-content__icon_google-log{src: "/google.jpg"}/
+          %span.fab.fa-facebook{class: "icon-facebook-log"}
+          %img.icon-google-log{src: "/google.jpg"}/
+          %span.far.fa-envelope{class: "mail-icon"}
 
   = render partial: "single_footer"
