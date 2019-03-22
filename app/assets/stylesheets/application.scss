@@ -1,4 +1,9 @@
-@import "./reset"; /* リセットCSS */
-@import "./variable"; /* 複数回使用する色の変数を定義 */
-
-/* *= require font-awesome */
+@import "config/reset";
+// リセットCSS
+@import "config/variable";
+// 複数回使用する色の変数を定義
+@import "config/common";
+// 全体共通のCSS
+@import "font-awesome";
+// font-awesomeの設定
+@import "item/header";
