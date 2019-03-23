@@ -1,0 +1,203 @@
+.header{
+  background-color: #fff;
+}
+
+.header-inner{
+  width: 700px;
+  margin: 0 auto;
+  padding: 8px 0 0;
+
+  // ヘッダー上
+  .header-search {
+    &__logo {
+      float: left;
+    }
+    &__keyword {
+      float: right;
+      position: relative;
+      width: calc(100% - (134px + 16px));
+    }
+    .input-default {
+      width: 100%;
+      height: 36px;
+      padding: 9px 32px 9px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
+      font-size: 16px;
+    }
+    .icon-search{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 36px;
+      line-height: 36px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  // ヘッダー下
+  .header-nav.clearfix{
+    margin: 8px 0 0;
+    .header-nav-left {
+
+      &__category {
+        float: left;
+        position: relative;
+        &:hover ul {
+          display: block;
+        }
+        h2 {
+          font-size: 14px;
+          font-weight: 400;
+          a {
+            display: inline-block;
+            color: #333;
+            width: 150px;
+            height: 38px;
+            line-height: 32px;
+            &:hover {
+              color: #0099e8;
+            }
+          }
+        }
+      }
+
+      &__brand {
+        float: left;
+        padding: 0 0 0 16px;
+        position: relative;
+        &:hover ul {
+          display: block;
+        }
+        h2 {
+          font-size: 14px;
+          font-weight: 400;
+          a {
+            display: inline-block;
+            color: #333;
+            width: 150px;
+            height: 38px;
+            line-height: 32px;
+            &:hover {
+              color: #0099e8;
+            }
+          }
+        }
+
+        &__wrap {
+          display: none;
+          position: absolute;
+          top: 38px;
+          left: -34px;
+          background: #fff;
+          box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24);
+          li {
+            width: 224px;
+            &:hover li {
+              display: block;
+            }
+            h3 {
+              font-weight: 400px;
+              font-size: 14px;
+              a {
+                display: inline-block;
+                width: 100%;
+                padding: 0 16px;
+                line-height: 44px;
+                color: black;
+                &:hover {
+                  background-color: #FC0000;
+                  color: #fff;
+                }
+              }
+            }
+            ul {
+              position: absolute;
+              top: 0px;
+              left: 224px;
+              bottom: 0px;
+              background: #fff;
+              box-shadow: 1px 0 0 0 #eee inset;
+              li {
+                display: none;
+                width: 224px;
+                &:hover li {
+                  display: block;
+                }
+                a {
+                  padding: 8px 16px;
+                  display: block;
+                  color: black;
+                  font-size: 14px;
+                  &:hover {
+                    background-color: #FAFAFA;
+                  }
+                }
+                ul {
+                  position: absolute;
+                  top: 0;
+                  left: 224px;
+                  bottom: 0;
+                  background: #fff;
+                  box-shadow: 1px 0 0 0 #eee inset;
+                  li {
+                    display: none;
+                    width: 320px;
+                    a {
+                      padding: 8px 16px;
+                      display: block;
+                      color: black;
+                      font-size: 14px;
+                      &:hover {
+                        background-color: #FAFAFA;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .header-nav-rigth {
+      float: right;
+      &__login {
+        display: inline-block;
+        a {
+          display: inline-block;
+          padding: 0 10px;
+          line-height: 30px;
+          background: #ea352d;
+          border: 1px solid #ea352d;
+          color: #fff;
+          border-radius: 4px;
+          text-align: center;
+        }
+      }
+
+      &__signup {
+        display: inline-block;
+        margin: 0 0 0 8px;
+        a {
+          display: block;
+          border: 1px solid #0099e8;
+          background: #fff;
+          color: #0099e8;
+          padding: 0 10px;
+          line-height: 30px;
+          border-radius: 4px;
+          text-align: center;
+          &:hover {
+            background-color: #0099e8;
+            color: #fff;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+}

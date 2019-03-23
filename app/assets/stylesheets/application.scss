@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+@import "config/reset";
+// リセットCSS
+@import "config/variable";
+// 複数回使用する色の変数を定義
+@import "config/common";
+// 全体共通のCSS
+@import "font-awesome";
+// font-awesomeの設定
+@import "item/header";
+=======
 @import "./reset"; /* リセットCSS */
 @import "./variable"; /* 複数回使用する色の変数を定義 */
 @import "./signup"; /* ユーザー新規登録画面 */
@@ -6,3 +17,4 @@
 
  /* *= require font-awesome */
 
+>>>>>>> master

@@ -190,3 +190,4 @@
 
 ### Association
 - belongs_to :user
+>>>>>>> master
