@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "config/reset";
 // リセットCSS
 @import "config/variable";
@@ -7,14 +6,15 @@
 // 全体共通のCSS
 @import "font-awesome";
 // font-awesomeの設定
+
+
+// itemファイル
 @import "item/header";
-=======
-@import "./reset"; /* リセットCSS */
-@import "./variable"; /* 複数回使用する色の変数を定義 */
-@import "./signup"; /* ユーザー新規登録画面 */
-@import "./header_top"; /*ユーザー新規登録画面のheder 部分テンプレート */
-@import "./single_footer"; /*ユーザー新規登録画面のfooter 部分テンプレート/*
+@import "item/main";
 
- /* *= require font-awesome */
-
->>>>>>> master
+@import "signup";
+/* ユーザー新規登録画面 */
+@import "header_top";
+/*ユーザー新規登録画面のheder 部分テンプレート */
+@import "single_footer";
+// ユーザー新規登録画面のfooter 部分テンプレート
