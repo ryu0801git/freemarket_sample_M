@@ -1,0 +1,23 @@
+.wrapper
+  = render partial: "header_top"
+
+  %main.main-wrapper
+    .main-content
+      %h2.main-content__h2 新規会員登録
+
+      .main-inner
+        .main-inner-content
+          = link_to "https://www.mercari.com/jp/signup/registration/", class: "main-inner-content__a_btn-default main-inner-content__a_btn-mail" do
+            %p.icon-mail メールアドレスで登録
+
+          %button#facebook-login.main-inner-content__a_btn-default.btn-sns.main-inner-content__button_sns-facebook
+            %p.icon-facebook Facebookで登録
+
+          %button#google-login.main-inner-content__a_btn-default.btn-sns.main-inner-content__button_sns-google
+            %p.icon-fgoogle Googleで登録
+
+          %span.far.fa-envelope{class: "main-inner-content__icon_mail"}
+          %span.fab.fa-facebook{class: "main-inner-content__icon_facebook-log"}
+          %img.main-inner-content__icon_google-log{src: "/google.jpg"}/
+
+  = render partial: "single_footer"
