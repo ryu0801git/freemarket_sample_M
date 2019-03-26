@@ -1,0 +1,40 @@
+.single-footer{
+width: 456px;
+height: 220px;
+margin: 0 auto;
+position: relative;
+    .single-footer-ul {
+    position: absolute;
+    padding: 40px 0;
+    left :40px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    line-height: 12px;
+      &__li {
+        list-style: none;
+        display: inline-block;
+        padding: 7px;
+        }
+    }
+      a {
+         text-decoration: none ;
+         color: #333333;
+      }
+      a:hover {
+         text-decoration: underline;
+      }
+  &__img_mercari-log {
+  position: relative;
+  left: 200px;
+  top: 90px;
+  display: block;
+  }
+  &__p {
+  font-family: "Source Sans Pro";
+  position: relative;
+  left: 205px;
+  top: 95px;
+  font-size: 11.5px;
+  }
+}

@@ -1,0 +1,13 @@
+$header: #FFFFFF;
+$body: #F5F5F5;
+$footer: #212121;
+// background-colorの定義
+@mixin block_central {
+      top:  0;
+      bottom:  0;
+      left:  0;
+      right:  0;
+      margin: auto;
+      }
+// ブロック要素の上下左右中央寄せ
+
